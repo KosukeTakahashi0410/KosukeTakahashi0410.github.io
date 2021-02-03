@@ -1,6 +1,104 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <h1>About</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>あばうと</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root">
+      <!-- サイドバーのコンテンツ -->
+      <div>
+        <div>
+          <input type="button" id="button" onclick="sidebarAction()">
+          <img src="/images/menuIcon.png" class="buttonImg">
+          <img src="/images/closeIcon.png" class="buttonImg hidden" id="closeImg">
+        </div>
+        <div class="menu"></div>
+        <div class="top wf-nicomoji">
+          <a href="https://kosuketakahashi0410.github.io/" class="link sidebarLink">とっぷ</a>
+        </div>
+        <div class="about wf-nicomoji">
+          <a href="https://kosuketakahashi0410.github.io/about.html" class="link sidebarLink">あばうと</a>
+        </div>
+        <div class="contact wf-nicomoji">
+          <a href="https://kosuketakahashi0410.github.io/contact.html" class="link sidebarLink">こんたくと</a>
+        </div>
+      </div>
+      <!-- headerのアニメーションを含めたコンテナ -->
+      <div>
+        <div class="header">
+          <h1 class="wf-nicomoji title">あばうと</h1>
+        </div>
+        <div class="dummyHeader"></div>
+      </div>
+      <!-- コンテンツ部 -->
+      <div class="pageContent">
+        <div class="infoImgWrapper">
+          <img src="/images/NoImage.png" class="infoImg">
+        </div>
+        <h2 class="contentTitle wf-nicomoji">じこしょうかい</h2>
+        <div class="content wf-mplus1p">都内のWEBプログラマ。業務歴は一年ないくらい。業務的にはフロントエンドをやってます（フロントエンドが得意なわけではない）。<br>個人開発をしたい。最近はかわいい表現とかに関心があります。</div>
+        <h2 class="contentTitle wf-nicomoji">ぷろふぃーる</h2>
+        <div class="content wf-mplus1p">HN TK<br>BIRTH 04/10/1997<br>HOBBY Game, Programming</div>
+        <h2 class="contentTitle wf-nicomoji">げんごなど</h2>
+        <div class="content wf-mplus1p">JavaScript（業務一年弱）<br>TypeScript（よくわかってない）<br>Java（業務ほぼなし）<br>Nuxt.js（業務一年弱）</div>
+        <h2 class="contentTitle wf-nicomoji">りんく</h2>
+        <div class="content wf-mplus1p">
+          <a href="https://twitter.com/yurufuwa_net" target="blank" rel="noopener"  class="link">→Twitter</a>
+          <br>
+          <a href="https://github.com/Kos" target="blank" rel="noopener"  class="link">→Github</a>
+          <br>
+          <a href="https://kosuketakahashi0410.github.io/" class="link">→HomePage（これ）</a>
+        </div>
+      </div>
+      <h2 class="contentTitle wf-nicomoji">わーくす</h2>
+      <div class="workContainer">
+        <div class="work" id="work1">
+          <img class="workImg" src="/images/gotugotuahan.png">
+        </div>
+        <div class="work" id="work2">
+          <img class="workImg" src="/images/homepage.png">
+        </div>
+        <div class="work" id="work3">
+          <img class="workImg" src="/images/prepare.png">
+        </div>
+      </div>
+      <!-- モーダルの要素 -->
+      <div id="mask" class="hidden"></div>
+      <div>
+        <div id="work1modal" class="hidden modal">
+          <img src="/images/gotugotuahan.png" class="modalImg">
+          <div class="workText wf-mplus1p">
+            ゴツゴツのアハンという画像にハマっていた時作ったChrome拡張<br>
+            特にそれ以上の機能はない謎の拡張機能<br>
+            ネタアプリにもなりきれない悲しい子<br>
+            素のJavaScriptで実装<br>
+            <a href="https://github.com/KosukeTakahashi0410/gotsugotsunoahan" target="blank" rel="noopener" class="link">→ゴツゴツのアハン</a>
+          </div>
+        </div>
+        <div id="work2modal" class="hidden modal">
+          <img src="/images/homepage.png" class="modalImg">
+          <div class="workText wf-mplus1p">
+            このサイト<br>
+            HTML, CSSに苦手意識が強かったので練習がてら作成<br>
+            同時にAnime.jsも気になっていたのでとりあえず使ってみました<br>
+            個人的にはサイドバーの動きがかわいいかなと思ってます<br>
+            ちなみにコンセプトはメンヘラです<br>
+          </div>
+        </div>
+        <div id="work3modal" class="hidden modal">
+          <img src="/images/200x200.jpg" class="modalImg">
+          <div class="workText wf-mplus1p">
+            準備中
+          </div>
+        </div>
+			</div>
+    </div>
+    <script src="/scripts/anime.min.js"></script>
+    <script src="/scripts/about.js"></script>
+  </body>
 </html>
