@@ -95,7 +95,7 @@ window.onload = () => {
       easing: 'easeInOutSine',
       opacity: 0,
       duration: 800,
-      scale: 1000,
+      scale: 10,
     }, '-=30')
     // 内の円を拡大
     .add({
@@ -103,7 +103,7 @@ window.onload = () => {
       easing: 'easeInOutSine',
       opacity: 0,
       duration: 750,
-      scale: 1000,
+      scale: 10,
     }, '-=750')
     .add({
       targets: 'div.topText',
