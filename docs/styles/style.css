@@ -27,6 +27,7 @@ body {
   border-radius: 50%;
   border: solid;
   border-color: #eaa0e8;
+  background-color: #eaa0e8;
   z-index: 0;
   opacity: 0;
 }
@@ -40,6 +41,7 @@ body {
   border-radius: 50%;
   border: solid;
   border-color: #f5c7f3;
+  background-color: #f5c7f3;
   z-index: 1;
   opacity: 0;
 }
