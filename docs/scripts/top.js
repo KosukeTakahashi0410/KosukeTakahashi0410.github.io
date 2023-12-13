@@ -75,8 +75,6 @@ function sidebarAction() {
 
 // 基本的にtimelineとdelay,timelineの速度を変えて同時っぽく見せたりする
 window.onload = () => {
-  // ボタンを非活性に
-  button.disabled = true;
   // 1000は適当
   anime
     .timeline()
@@ -132,8 +130,4 @@ window.onload = () => {
       },
       "-=700"
     );
-  // setTimeoutでボタンを再度活性化させるのを待たせる
-  window.setTimeout(() => {
-    button.disabled = false;
-  }, 2000);
 };
