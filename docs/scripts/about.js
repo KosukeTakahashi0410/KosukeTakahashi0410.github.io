@@ -106,6 +106,24 @@ window.onload = () => {
     // コンテンツを表示
     .add(
       {
+        targets: "p.content",
+        translateY: { value: 5, duration: 450 },
+        opacity: 1,
+      },
+      "-=650"
+    )
+    // コンテンツを表示
+    .add(
+      {
+        targets: "ul.content",
+        translateY: { value: 5, duration: 450 },
+        opacity: 1,
+      },
+      "-=650"
+    )
+    // リンクを表示
+    .add(
+      {
         targets: "div.content",
         translateY: { value: 5, duration: 450 },
         opacity: 1,
